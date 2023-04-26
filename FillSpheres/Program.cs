@@ -13,6 +13,17 @@ namespace FillSpheres
             bola.Pop();
             bola.Throw();
             Console.WriteLine(bola.ToString());
+
+            Sphere ozi = new Sphere(new Color(120, 89, 56, 80), 2);
+            ozi.Throw();
+            ozi.Throw();
+            ozi.Throw();
+            ozi.Throw();
+            ozi.Throw();
+            ozi.Throw();
+            ozi.Throw();
+            ozi.Pop();
+            Console.WriteLine(ozi.ToString());
         }
     }
 }
