@@ -43,7 +43,7 @@ namespace FillSpheres
         //GrayScale
         public byte GetGrey()
         {
-            int grey = (red + green + blue)/3;
+            int grey = (red + green + blue) / 3;
             return (byte)grey;
         }
 

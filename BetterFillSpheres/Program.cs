@@ -7,7 +7,7 @@ namespace FillSpheres
         static void Main(string[] args)
         {
 
-            Sphere bola = new Sphere { color = new Color { red = 25, green = 0, blue = 0 }, raio = 5 };
+            Sphere bola = new Sphere { color = new Color { red = 255, green = 0, blue = 0 }, raio = 5 };
             bola.Throw();
             bola.Throw();
             bola.Pop();
@@ -24,6 +24,9 @@ namespace FillSpheres
             ozi.Throw();
             ozi.Pop();
             Console.WriteLine(ozi.ToString());
+            Console.WriteLine(bola.color.color);
+            Console.WriteLine(ozi.color.color);
+
         }
     }
 }

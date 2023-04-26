@@ -8,21 +8,22 @@ namespace FillSpheres
         public byte blue { get; set; }
         public byte alpha { get; set; }
 
-        /*public Color(byte Red, byte Green, byte Blue, byte Alpha)
+        public string color  
         {
-            red = Red;
-            green = Green;
-            blue = Blue;
-            alpha = Alpha;
-        }*/
-        /*public Color(byte Red, byte Green, byte Blue)
-        {
-            red = Red;
-            green = Green;
-            blue = Blue;
-            alpha = byte.MaxValue;
+            get
+            {
+                return this switch
+                {
+                    null => "No Color",
+                    { red: 255, green: 0, blue: 0 } => "Red 100%",
+                    { red: 0, green: 255, blue: 0 } => "Green 100%",
+                    { red: 0, green: 0, blue: 255 } => "Blue 100%",
+                    _ => "Mixed Color"
+                };
+
+            }
         }
-*/
+
         //GrayScale
         public byte GetGrey()
         {
