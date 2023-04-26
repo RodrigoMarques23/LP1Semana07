@@ -2,10 +2,10 @@ namespace FillSpheres
 {
     public class Color
     {
-        private byte red;
-        private byte green;
-        private byte blue;
-        private byte alpha;
+        private readonly byte red;
+        private readonly byte green;
+        private readonly byte blue;
+        private readonly byte alpha;
 
         public Color(byte Red, byte Green, byte Blue, byte Alpha)
         {
@@ -38,24 +38,6 @@ namespace FillSpheres
         public byte GetAlpha()
         {
             return alpha;
-        }
-
-        //Setters
-        public void SetRed(byte Red)
-        {
-            this.red = Red;
-        }
-        public void SetGreen(byte Green)
-        {
-            this.green = Green;
-        }
-        public void SetBlue(byte Blue)
-        {
-            this.blue = Blue;
-        }
-        public void SetAlpha(byte Alpha)
-        {
-            this.alpha = Alpha;
         }
 
         //GrayScale
