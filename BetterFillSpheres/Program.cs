@@ -6,7 +6,7 @@ namespace FillSpheres
     {
         static void Main(string[] args)
         {
-
+            
             Sphere bola = new Sphere { color = new Color { red = 255, green = 0, blue = 0 }, raio = 5 };
             bola.Throw();
             bola.Throw();

@@ -5,6 +5,7 @@ namespace FillSpheres
     public class Sphere
     {
         private int throws;
+        //proprieties
         public Color color { get; set; }
         public int raio { get; set; }
 

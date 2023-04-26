@@ -2,12 +2,16 @@ namespace FillSpheres
 {
     public class Color
     {
-
+        //Proprieties
         public byte red { get; set; }
         public byte green { get; set; }
         public byte blue { get; set; }
         public byte alpha { get; set; }
 
+        /// <summary>
+        /// property pattern in switch
+        /// </summary>
+        /// <value></value>
         public string color  
         {
             get
@@ -30,7 +34,7 @@ namespace FillSpheres
             int grey = (red + green + blue) / 3;
             return (byte)grey;
         }
-
+        
         public override string ToString()
         {
             return $"Red: {red}, Green: {green}, Blue: {blue}, Alpha: {alpha} ";
