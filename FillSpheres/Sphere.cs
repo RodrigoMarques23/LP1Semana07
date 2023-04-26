@@ -4,20 +4,25 @@ namespace FillSpheres
 {
     public class Sphere
     {
-        private Color color;
-        private int raio;
         private int throws;
-        public Sphere(Color Color, int Raio)
-        {
-            color = Color;
-            raio = Raio;
-            throws = 0;
-        }
+        public Color color { get; set; }
+        public int raio { get; set; }
+
+        public int Throws { get { return throws; } set { throws = 0; } }
+
+
+        /// <summary>
+        /// Pop the ball
+        /// </summary>
         public void Pop()
         {
             Console.WriteLine("Popped ball");
             raio = 0;
         }
+
+        /// <summary>
+        /// Throw the ball
+        /// </summary>
         public void Throw()
         {
             if (raio > 0)
@@ -27,13 +32,18 @@ namespace FillSpheres
             }
             else
             {
-                Console.WriteLine("Cant Throw");
+                Console.WriteLine("Can't Throw");
             }
         }
+        /// <summary>
+        /// Get throws number
+        /// </summary>
+        /// <returns></returns>
         public int GetTimesThrown()
         {
             return throws;
         }
+
         public override string ToString()
         {
             return color.ToString() + $"Raio: {raio}, Throws Number: {throws}";
