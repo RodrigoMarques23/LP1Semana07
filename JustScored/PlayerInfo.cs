@@ -6,21 +6,19 @@ namespace JustScored
     {
 
         private float maxScore;
-        private string name;
         private int gamesPlayed;
         private int gamesWon;
-        private string s = "No games played";
         public float MaxScore
         {
             get { return maxScore; }
-            set { }
+            set { if (value > maxScore) maxScore = value; }
         }
         public string Name { get; }
         public float RateOfSuccess
         {
             get
             {
-                return gamesWon / gamesPlayed;
+                return (float)gamesWon / (float)gamesPlayed;
             }
         }
 
@@ -39,7 +37,7 @@ namespace JustScored
         }
         public PlayerInfo(string playerName)
         {
-            name = playerName;
+            Name = playerName;
         }
 
     }
